@@ -1,0 +1,10 @@
+Person.prototype.myFriends6 = (friends) => {
+
+    var arr = friends.map(el => `${this.name} is friends with ${el}`);
+
+    console.log(arr);
+}
+
+new Person('Mike').myFriends6(friends);
+/// We get the result [" is friends with Bob", " is friends with Jane", " is friends with Mark"]
+//This is wrong
